@@ -9,6 +9,7 @@ import {
     TouchableOpacity
 } from 'react-native';
 import * as Animatable from 'react-native-animatable';
+import { NavigationContainer } from '@react-navigation/native';
 
 class Main extends Component {
    state = {
@@ -23,7 +24,8 @@ class Main extends Component {
                         <Text style={styles.headerText}>Welcome</Text>
                         <Text style={styles.headerText2}>Park your vehicle safely</Text>
                     </View>
-                    <View style={styles.footer}>
+                    <Animatable.View style={styles.footer}
+                    animation="slideInUp">
                         <Text style = {styles.text_footer}>Email</Text>
                         <View style={styles.action}>
                             <TextInput
@@ -46,13 +48,14 @@ class Main extends Component {
                                 Sign In
                             </Text>
                         </Animatable.View>
-                        <TouchableOpacity style={styles.sign_out_button}>
+                        <Animatable.View  style={styles.sign_out_button}
+                        animation="flash">
                             <Text style={styles.sign_out_text}>
                                 Sign Up
                             </Text>
-                        </TouchableOpacity>
+                        </Animatable.View >
                         
-                    </View>
+                    </Animatable.View>
                </View>
             </ScrollView>
          </View>
@@ -103,6 +106,7 @@ const styles = StyleSheet.create ({
         alignItems:'center',
         borderRadius:5
     },
+
     sign_out_button: {
         marginTop: 30,
         alignItems:'center',

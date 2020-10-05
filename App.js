@@ -6,7 +6,8 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, { Component } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 import {
   SafeAreaView,
   StyleSheet,
@@ -25,13 +26,16 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import Main from './src/Main.js';
 
-const App: () => React$Node = () => {
-  return (
+class App extends Component {
+  render(){
+    return (
     <>
       <StatusBar barStyle="dark-content" />
       <Main/>
     </>
   );
+  }
+  
 };
 
 const styles = StyleSheet.create({
