@@ -1,0 +1,500 @@
+   19  code .
+   20  laravel new StudentInformationSystem
+   21  git init
+   22  git add .
+   23  git commit -m "Initial commit"
+   24  git push origin master
+   25  git remote add origin https://github.com/avijitacharjee/StudentInformationSystem.git
+   26  git push origin master
+   27  git init
+   28  git add .
+   29  git commit -m "Inital commit"
+   30  git push origin master
+   31  git remote add origin https://github.com/avijitacharjee/StudentInformationSystem.git
+   32  git push origin master
+   33  git branch development
+   34  git checkout development
+   35  git push origin development
+   36  code .
+   37  php artisan migrate
+   38  php artisan migrate
+   39  php artisan migrate
+   40  git add .
+   41  git commit -m "Database created"
+   42  git push origin development
+   43  git add .
+   44  git commit -m "Database create"
+   45  git push origin master
+   46  git push origin development
+   47  git push origin development
+   48  git add .
+   49  git commit -m "Database create"
+   50  code .
+   51  php artisan migrate
+   52  php artisan migrate
+   53  php artisan make:controller AuthController
+   54  php artisan route:list
+   55  php artisan route:list
+   56  php artisan route:list
+   57  php artisan make:model CEO -m
+   58  php artisan migrate
+   59  php artisan migrate
+   60  php artisan make:controller CEOController --api --model=CEO
+   61  php artisan make:resource CEOResource
+   62  php artisan routes:list
+   63  php artisan route:list
+   64  php artisan route:list
+   65  php artisan route:list
+   66  php artisan route:list
+   67  php artisan config:cache
+   68  php artisan route:list
+   69  php artisan config:cache
+   70  php artisan route:list
+   71  composer dump-autoload
+   72  php artisan route:list
+   73  php artisan make:controller AController
+   74  php artisan route:list
+   75  code .
+   76  composer require laravel/passport
+   77  composer require laravel/passport
+   78  composer require laravel/passport
+   79  php artisan migrate
+   80  php artisan passport:install
+   81  git add .
+   82  git commit -m "passport authentication added"
+   83  git status
+   84  git push origin development
+   85  php artisan make:controller api/AuthController --api --model=User
+   86  git branch demo_signup_login
+   87  git status
+   88  git checkout demo_signup_login
+   89  git add .
+   90  git commit -m "sign-up-sign-in api"
+   91  git push origin demo_signup_login
+   92  git add .
+   93  git commit -m "json response"
+   94  git push origin demo_signup_login
+   95  git diff
+   96  Laravel new passportApp
+   97  dir
+   98  cd passportApp
+   99  code .
+  100  composer require laravel/passport
+  101  composer require laravel/passport
+  102  php artisan passport:install
+  103  git diff
+  104  code .
+  105  git pull https://github.com/ascuet/covid19-server.git
+  106  php artisan serve
+  107  dir
+  108  ls
+  109  git pull https://github.com/ascuet/covid19-server.git
+  110  php artisan serve
+  111  composer dump-autoload
+  112  php artisan serve
+  113  git pull https://github.com/ascuet/covid19-server.git
+  114  composer dump-autoload
+  115  git init
+  116  git remote add origin https://github.com/avijitacharjee/abcd.git
+  117  git add .
+  118  git commit -m 'Initial commit"
+  119  git status
+  120  git add .
+  121  git commit -m "Initial commit "
+  122  git push origin master
+  123  git branch
+  124  git branch flower
+  125  git branch
+  126  git branch joya
+  127  git branch
+  128  git checkout joya
+  129  git branch
+  130  git add .
+  131  git commit -m "text file added"
+  132  git push origin joya
+  133  git checkout master
+  134  git checkout joya
+  135  git checkout master
+  136  git checkout joya
+  137  git add .
+  138  git commit -m "nothgin"
+  139  git push origin master
+  140  git checkout joya
+  141  git init
+  142  git pull https://github.com/avijitacharjee/BornomalaApp.git
+  143  git branch "login activity"
+  144  git branch login_activity
+  145  git checkout login_activity
+  146  git remote add origin alkj.git
+  147  git add .
+  148  git commit -m "lkad"
+  149  git push origin login_activity
+  150  git pull https://github.com/avijitacharjee/project.git
+  151  git init
+  152  git pull https://github.com/avijitacharjee/project.git
+  153  git status
+  154  git add .
+  155  git commit -m "Amar matha"
+  156  git push origin master
+  157  git remote add origin https://github.com/avijitacharjee/project.git
+  158  git push origin master
+  159  git branch
+  160  git branch "abcd"
+  161  git branch
+  162  git checkout abcd
+  163  git add .
+  164  git commit -m "tomar mundu"
+  165  git push origin abcd
+  166  <html> >> index.php
+  167  <html> << index.php
+  168  code .
+  169  mkdir OnlineShop
+  170  cd OnlineShop
+  171  dir
+  172  mkdir css
+  173  mkdir js
+  174  mkdir php
+  175   > index.php
+  176  code.
+  177  code .
+  178  code .
+  179  code .
+  180  laravel new ExampleProject
+  181  exit
+  182  code .
+  183  py -2 main.py
+  184  py -2 main.py
+  185  py -2 main.py
+  186  py -2 main.py
+  187  py -2 main.py
+  188  py -2 main.py
+  189  py -2 main.py
+  190  py -2 main.py
+  191  py -2 main.py
+  192  py -2 main.py
+  193  py -2 main.py
+  194  py -2 main.py
+  195  py -2 main.py
+  196  py -2 main.py
+  197  py -2 main.py
+  198  py -2 main.py
+  199  py -2 main.py
+  200  py -2 main.py
+  201  py -2 main.py
+  202  py -2 main.py
+  203  py -2 main.py
+  204  py -2 main.py
+  205  py -2 main.py
+  206  py -2 main.py
+  207  py -2 main.py
+  208  py -2 main.py
+  209  py -2 main.py
+  210  py -2 main.py
+  211  py -2 main.py
+  212  py -2 main.py
+  213  code .
+  214  py -2 main.py
+  215  py -2 main.py
+  216  py -2 main.py
+  217  py -2 main.py
+  218  py -2 main.py
+  219  py -2 main.py
+  220  py -2 main.py
+  221  py -2 main.py
+  222  py -2 main.py
+  223  py -2 main.py
+  224  py -2 main.py
+  225  py -2 main.py
+  226  py -2 main.py
+  227  py -2 main.py
+  228  py -2 main.py
+  229  py -2 main.py
+  230  py -2 main.py
+  231  py -2 main.py
+  232  py -2 main.py
+  233  git init
+  234  git clone https://github.com/avijitacharjee/StudentInformationSystem.git
+  235  dir
+  236  cd StudentInformationSystem
+  237  dir
+  238  php artisan serve
+  239  composer dump-autoload
+  240  php artisan serve
+  241  code .
+  242  git pull Script @php artisan package:discover --ansi handling the post-autoload-dump event returned with error code 255
+  243  git pull https://github.com/avijitacharjee/StudentInformationSystem.git
+  244  php artisan serve
+  245  composer dump-autoload
+  246  git add .
+  247  git commit -m "Krishna"
+  248  git branch
+  249  git checkout master
+  250  git add .
+  251  git commit -m "Krishna"
+  252  git push origin master
+  253  git checkout demo_signup_login
+  254  git push origin demo_signup_login
+  255  git checkout master
+  256  code .
+  257  git add .
+  258  git commit -m "Krishna"
+  259  git push origin master
+  260  git pull origin master
+  261  git pull origin master
+  262  git pull origin master
+  263  git push origin master
+  264  git checkout development
+  265  git add .
+  266  git commit -m "Delete .gitignore"
+  267  git push origin development
+  268  git pull https://bdren.zoom.us/j/64287179506 demo_signup_login
+  269  git pull https://github.com/avijitacharjee/StudentInformationSystem.git demo_signup_login
+  270  php artisan serve
+  271  git pull https://github.com/avijitacharjee/StudentInformationSystem.git demo_signup_login
+  272  git pull https://github.com/avijitacharjee/StudentInformationSystem.git demo_signup_login
+  273  git init
+  274  git pull https://github.com/avijitacharjee/StudentInformationSystem.git demo_signup_login
+  275  php artisan serve
+  276  code main.py
+  277  code .
+  278  py -2 main.py
+  279  py -2 main.py
+  280  py -2 main.py
+  281  py -2 main.py
+  282  py -2 main.py
+  283  py -2 main.py
+  284  py -2 main.py
+  285  code .
+  286  laravel new ex2
+  287  code .
+  288  py main.py
+  289  py main.py
+  290  py main.py
+  291  py main.py
+  292  py main.py
+  293  py main.py
+  294  python
+  295  py -3
+  296  py main.py
+  297  code .
+  298  code .
+  299  code .
+  300  code .
+  301  code . | exit
+  302  exit
+  303  code .
+  304  code .
+  305  code .
+  306  code .
+  307  code .
+  308  code .
+  309  code .
+  310  git status
+  311  git branch
+  312  git branch test
+  313  git checkout test
+  314  git pull https://github.com/iammeskat/StudentInformationSystem.git user_login_signup
+  315  git branch
+  316  vim
+  317  adduser avijit
+  318  php artisan serve
+  319  git branch seedertest
+  320  git checkout seedertest
+  321  php artisan make:seeder UserSeeder
+  322  code .
+  323  code .
+  324  git diff HEAD~1 HEAD~2
+  325  git diff HEAD^ HEAD
+  326  git diff HEAD~6 HEAD~10
+  327  git diff HEAD~10 HEAD~6
+  328  nano
+  329  sudo --help
+  330  adduser avi
+  331  man
+  332  vim
+  333  git reflog
+  334  git diff HEAD~1 HEAD~2
+  335  git diff HEAD~2 HEAD~1
+  336  git diff HEAD~2 HEAD~1
+  337  git diff HEAD~1 HEAD~2
+  338  git commit --ammend
+  339  code .
+  340  adb devices
+  341  adb devices
+  342  git add .
+  343  git init
+  344  git add .
+  345  git commit -m "Krishna"
+  346  git remote add origin https://github.com/avijitacharjee/VehicleParkingReactNative.git
+  347  git push origin master
+  348  git branch dev
+  349  git checkout dev
+  350  git add .
+  351  git commit -m "dev"
+  352  git push origin dev
+  353  npm install react-native-vector-icons --save
+  354  npm install react-native-vector-icons --save
+  355  npm install react-native-vector-icons --save
+  356  npm install react-native-vector-icons --save
+  357  react-native link react-native-vector-icons
+  358  npm install react-native-animatable --save
+  359  react-native link react-native-animatable
+  360  git add .
+  361  git commit -m "login design"
+  362  git push origin dev
+  363  npm install @react-navigation/native
+  364  react-native link @react-navigation/native
+  365  expo --version
+  366  npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+  367  npm i jetifier
+  368  npx jetify
+  369  npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+  370  npx create-react-app vehicle-parking
+  371  npx react-native init VehicleParking
+  372  npx react-native init VehicleParking
+  373  cd VehicleParking
+  374  adb devices
+  375  npx react-native run-android
+  376  npx react-native run-android
+  377  npx react-native run-android
+  378  npx react-native run-android
+  379  npx react-native run-android
+  380  npx react-native run-android
+  381  npx react-native run-android
+  382  npx react-native run-android
+  383  npx react-native run-android
+  384  npx react-native run-android
+  385  npx react-native run-android
+  386  npx react-native run-android
+  387  adb devices
+  388  npx react-native run-android
+  389  npx react-native run-android
+  390  npx react-native run-android
+  391  npx react-native run-android
+  392  laravel new sd_assignment
+  393  del sd_assignment
+  394  delete sd_assignment
+  395  rmdir sd_assignment
+  396  rmdir /s sd_assignment
+  397  rmdir /S "sd_assignment"
+  398  rmdir sd_assignment /s
+  399  Rmdir /S sd_assignment
+  400  laravel new SdAssignment
+  401  dir
+  402  cd SdAssignment
+  403  code .
+  404  php artisan migrate
+  405  code .
+  406  cd android
+  407  gradlew assembleDebug
+  408  gradlew assembleDebug
+  409  gradlew assembleDebug
+  410  react-native --version
+  411  cd ..
+  412  adb devices
+  413  adb devices
+  414  npx react-native run-android
+  415  npx react-native run-android
+  416  adb devices
+  417  npx react-native run-android
+  418  code .
+  419  code .
+  420  git branch
+  421  git branch
+  422  code .
+  423  laravel new e-commerce-1
+  424  laravel new e-commerce-1
+  425  git init
+  426  git remote add origin https://github.com/avijitacharjee/e-commerce-1.git
+  427  git push origin master
+  428  git add .
+  429  git commit -m "Krishna"
+  430  cd e-commerce-1
+  431  git add .
+  432  git init
+  433  git add .
+  434  git commit -m "Krishna"
+  435  git remote add origin https://github.com/avijitacharjee/e-commerce-1.git
+  436  git push origin master
+  437  php artisan migrate
+  438  php artisan migrate
+  439  php artisan migrate
+  440  git add .
+  441  git commit -m "signin-signup design"
+  442  git push origin master
+  443  git branch development
+  444  git checkout development
+  445  php artisan make:controller AuthController
+  446  git add .
+  447  git commit -m "signup"
+  448  git push origin development
+  449  php artisan migrate
+  450  php artisan migrate:fresh
+  451  git add .
+  452  git commit -m "jquery form validation"
+  453  git push origin development
+  454  php artisan make:controller UserController
+  455  php artisan make:seeder UserSeeder
+  456  php artisan db:seed
+  457  php artisan db:seed --class=UserSeeder
+  458  php artisan db:seed --class=UserSeeder
+  459  php artisan db:seed --class=UserSeeder
+  460  php artisan db:seed --class=UserSeeder
+  461  php artisan make:factory UserFactory --model=User
+  462  php artisan db:seed
+  463  php artisan db:seed --class=UserSeeder
+  464  php artisan db:seed --class=UserSeeder
+  465  php artisan db:seed --class=UserSeeder
+  466  php artisan db:seed --class=UserSeeder
+  467  php artisan db:seed --class=UserSeeder
+  468  git add .
+  469  git commit -m "seeder"
+  470  git push origin development
+  471  git push origin development
+  472  nox_adb.exe connect 127.0.0.1:62001
+  473  adb connect 127.0.0.1:62001
+  474  code . | exit
+  475  code . ;exit
+  476  npm start
+  477  code .
+  478  start cmd.exe
+  479  code .
+  480  laravel --version
+  481  start cmd.exe
+  482  code .
+  483  npm start
+  484  tree
+  485  TREE
+  486  tree.com
+  487  code . | exit
+  488  code . ; exit
+  489  code . ;exit
+  490  code . ; exit
+  491  code . ; exit
+  492  code . ; exit
+  493  code . ; exit
+  494  code . ; exit
+  495  cmd.exe
+  496  start cmd.exe
+  497  ipconfig
+  498  code .
+  499  git status
+  500  git add .
+  501  git commit -m "login"
+  502  git push origin dev
+  503  npm install @react-navigation/native
+  504  npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+  505  npm install @react-navigation/stack
+  506  react-native bundle --dev false --platform android --entry-file index.android.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug
+  507  react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/src/main/assets/index.android.bundle --assets-dest ./android/app/src/main/res
+  508  react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug
+  509  mkdir -p android/app/src/main/assets && rm -rf android/app/build && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && cd android && ./gradlew clean assembleRelease && cd ../
+  510  doskey /HISTORY > history1.txt
+  511  cd ..
+  512  doskey /HISTORY > history1.txt
+  513  doskey /HISTORY
+  514  cmd.exe
+  515  history
+  516  history >history1.txt
+  517  rm history1.txt
+  518  history >history1.txt

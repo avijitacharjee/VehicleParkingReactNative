@@ -7,7 +7,6 @@
  */
 
 import React, { Component } from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import {
   SafeAreaView,
   StyleSheet,
@@ -25,17 +24,27 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import Main from './src/Main.js';
-
+import Home from './src/Home.js';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+const Stack = createStackNavigator();
 class App extends Component {
-  render(){
+  render() {
     return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <Main/>
-    </>
-  );
+      <>
+        <NavigationContainer>
+          <Stack.Navigator initialRouteName="Main">
+            <Stack.Screen
+              name="Main"
+              component={Main}
+               />
+            <Stack.Screen name="Home" component={Home} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </>
+    );
   }
-  
+
 };
 
 const styles = StyleSheet.create({

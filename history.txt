@@ -1,0 +1,8 @@
+adb devices
+adb tcpip 5555
+adb connect 192.168.43.244:5555
+adb devices
+npx react-native run-android
+doskey /HISTORY > history.txt
+dir
+doskey /HISTORY > history.txt

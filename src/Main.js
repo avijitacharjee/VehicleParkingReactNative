@@ -6,18 +6,28 @@ import {
     StyleSheet, 
     ScrollView, 
     TextInput, 
-    TouchableOpacity
+    TouchableOpacity,
+    ToastAndroid
 } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import { NavigationContainer } from '@react-navigation/native';
-
+import { createStackNavigator } from '@react-navigation/stack';
+const Stack = createStackNavigator();
 class Main extends Component {
+    
    state = {
       
+   }
+   login = () => {
+       if (Platform.OS === 'android') {
+           ToastAndroid.show("msg", ToastAndroid.SHORT)
+        }
+        this.props.navigation.navigate('Home');
    }
    render() {
       return (
          <View>
+            
             <ScrollView>
                <View style={styles.container}>
                     <View style={styles.header}>
@@ -41,13 +51,18 @@ class Main extends Component {
                                 textContentType="password"
                                 />
                         </View>
-                        <Animatable.View 
-                        style={styles.sign_in_button}
-                        animation="zoomInUp">
-                            <Text style={styles.sign_in_text}>
-                                Sign In
-                            </Text>
-                        </Animatable.View>
+                        <TouchableOpacity
+                        onPress = {this.login}
+                            >
+                            <Animatable.View 
+                            style={styles.sign_in_button}
+                            animation="zoomInUp">
+                                <Text style={styles.sign_in_text}>
+                                    Sign In
+                                </Text>
+                            </Animatable.View>
+                        </TouchableOpacity>
+                        
                         <Animatable.View  style={styles.sign_out_button}
                         animation="flash">
                             <Text style={styles.sign_out_text}>
@@ -63,7 +78,13 @@ class Main extends Component {
    }
 }
 export default Main
-
+function HomeScreen() {
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Home Screen</Text>
+      </View>
+    );
+  }
 const styles = StyleSheet.create ({
     container: {
         flex:1,
