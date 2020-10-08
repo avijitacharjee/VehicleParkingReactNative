@@ -14,14 +14,14 @@ import * as Animatable from 'react-native-animatable';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator();
-class Home extends Component {
+class SignUp extends Component {
 
     state = {
 
     }
     main = () => {
 
-        this.props.navigation.navigate('Main');
+        this.props.navigation.navigate('Login');
     }
     render() {
         return (
@@ -30,15 +30,29 @@ class Home extends Component {
                 <ScrollView>
                     <View style={styles.container}>
                         <View style={styles.header}>
-                            <Text style={styles.headerText}>2nd Screen</Text>
+                            <Text style={styles.headerText}>Register</Text>
                             <Text style={styles.headerText2}>Park your vehicle safely</Text>
                         </View>
                         <Animatable.View style={styles.footer}
                             animation="slideInUp">
+                            <Text style={styles.text_footer}>Full Name</Text>
+                            <View style={styles.action}>
+                                <TextInput
+                                    placeholder="eg. John Smith"
+                                    style={styles.box}
+                                />
+                            </View>
                             <Text style={styles.text_footer}>Email</Text>
                             <View style={styles.action}>
                                 <TextInput
                                     placeholder="abc@example.com"
+                                    style={styles.box}
+                                />
+                            </View>
+                            <Text style={styles.text_footer}>Phone</Text>
+                            <View style={styles.action}>
+                                <TextInput
+                                    placeholder="01xxx-xxxxxx"
                                     style={styles.box}
                                 />
                             </View>
@@ -57,7 +71,7 @@ class Home extends Component {
                                     style={styles.sign_in_button}
                                     animation="zoomInUp">
                                     <Text style={styles.sign_in_text}>
-                                        Sign In
+                                        Sign Up
                                 </Text>
                                 </Animatable.View>
                             </TouchableOpacity>
@@ -67,7 +81,7 @@ class Home extends Component {
                                 <Animatable.View style={styles.sign_out_button}
                                     animation="flash">
                                     <Text style={styles.sign_out_text}>
-                                        Sign Up
+                                        Sign In
                                 </Text>
                                 </Animatable.View >
                             </TouchableOpacity>
@@ -80,7 +94,7 @@ class Home extends Component {
         )
     }
 }
-export default Home
+export default SignUp
 
 const styles = StyleSheet.create({
     container: {
@@ -91,8 +105,8 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'flex-end',
         paddingHorizontal: 20,
-        paddingBottom: 50,
-        paddingTop: 100,
+        paddingBottom: 10,
+        paddingTop: 20,
         alignItems: 'center'
     },
     headerText: {
@@ -108,7 +122,7 @@ const styles = StyleSheet.create({
         paddingVertical: 50
     },
     text_footer: {
-        marginTop: 30
+        marginTop: 10
     },
     action: {
 

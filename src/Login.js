@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import { 
     Text,
     Image, 
@@ -13,7 +14,7 @@ import * as Animatable from 'react-native-animatable';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator();
-class Main extends Component {
+class Login extends Component {
     
    state = {
       
@@ -22,7 +23,10 @@ class Main extends Component {
        if (Platform.OS === 'android') {
            ToastAndroid.show("msg", ToastAndroid.SHORT)
         }
-        this.props.navigation.navigate('Home');
+        
+   }
+   registerPage = () => {
+    this.props.navigation.navigate('SignUp');
    }
    render() {
       return (
@@ -62,13 +66,17 @@ class Main extends Component {
                                 </Text>
                             </Animatable.View>
                         </TouchableOpacity>
+                        <TouchableOpacity
+                        onPress={this.registerPage}
+                            >
+                            <Animatable.View  style={styles.sign_out_button}
+                            animation="flash">
+                                <Text style={styles.sign_out_text}>
+                                    Sign Up
+                                </Text>
+                            </Animatable.View >
+                        </TouchableOpacity>
                         
-                        <Animatable.View  style={styles.sign_out_button}
-                        animation="flash">
-                            <Text style={styles.sign_out_text}>
-                                Sign Up
-                            </Text>
-                        </Animatable.View >
                         
                     </Animatable.View>
                </View>
@@ -77,7 +85,7 @@ class Main extends Component {
       )
    }
 }
-export default Main
+export default Login
 function HomeScreen() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>

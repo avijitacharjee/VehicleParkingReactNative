@@ -23,8 +23,8 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import Main from './src/Main.js';
-import Home from './src/Home.js';
+import Login from './src/Login.js';
+import SignUp from './src/SignUp.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator();
@@ -33,12 +33,13 @@ class App extends Component {
     return (
       <>
         <NavigationContainer>
-          <Stack.Navigator initialRouteName="Main">
+          <Stack.Navigator initialRouteName="Login">
             <Stack.Screen
-              name="Main"
-              component={Main}
+              name="Login"
+              component={Login}
+              options={{ headerShown: false }}
                />
-            <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="SignUp" component={SignUp} options={{ headerShown: false }} />
           </Stack.Navigator>
         </NavigationContainer>
       </>
