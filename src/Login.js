@@ -13,6 +13,7 @@ import {
 import * as Animatable from 'react-native-animatable';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import Park from './Park.js';
 const Stack = createStackNavigator();
 class Login extends Component {
     
@@ -20,10 +21,10 @@ class Login extends Component {
       
    }
    login = () => {
-       if (Platform.OS === 'android') {
-           ToastAndroid.show("msg", ToastAndroid.SHORT)
+        if (Platform.OS === 'android') {
+           ToastAndroid.show("Login Successfull", ToastAndroid.SHORT)
         }
-        
+        this.props.navigation.navigate('Park');
    }
    registerPage = () => {
     this.props.navigation.navigate('SignUp');
@@ -76,8 +77,6 @@ class Login extends Component {
                                 </Text>
                             </Animatable.View >
                         </TouchableOpacity>
-                        
-                        
                     </Animatable.View>
                </View>
             </ScrollView>

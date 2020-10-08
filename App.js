@@ -25,6 +25,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import Login from './src/Login.js';
 import SignUp from './src/SignUp.js';
+import Park from './src/Park.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator();
@@ -40,6 +41,16 @@ class App extends Component {
               options={{ headerShown: false }}
                />
             <Stack.Screen name="SignUp" component={SignUp} options={{ headerShown: false }} />
+            <Stack.Screen
+              name="Park"
+              component = {Park}
+              // options = {{ headerShown: false}}
+              headerStyle ={{
+                backgroundColor: "red",
+                
+              }}
+              headerTintColor = '#009387'
+              />
           </Stack.Navigator>
         </NavigationContainer>
       </>
