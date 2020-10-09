@@ -3,32 +3,39 @@ import {
     StyleSheet,
     Text,
     Image,
-    View,
     StatusBar
 } from 'react-native';
 import * as Animateble from 'react-native-animatable';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import ParkingBox from "./Components/ParkingBox";
 import ParkingView from "./Components/ParkingView";
+import {View} from 'react-native-animatable';
 class Park extends Component {
-    componentDidMount(){
-        StatusBar.setBarStyle( 'light-content',true)
-        StatusBar.setBackgroundColor("#009387")
+    qrCode = () => {
+        this.props.navigation.navigate('QR');
     }
     render() {
         return (
             <>
                 <View>
-                    <TouchableOpacity>
-                        <Text
-                            style={styles.avail_text}
+                    <Text
+                        style={styles.welcome}
                         >
-                            Parking space is available.
-                            Click to book.
+                        Welcome Mr. John
                     </Text>
-                    </TouchableOpacity>
                     <ParkingView/>
-
+                    <TouchableOpacity>
+                        <Text style = {styles.book}>
+                            Parking Space is available.
+                            Click to book.
+                        </Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                    onPress={this.qrCode}>
+                        <Text style = {styles.book}>
+                            Qr Code
+                        </Text>
+                    </TouchableOpacity>
                 </View>
             </>
         )
@@ -36,7 +43,11 @@ class Park extends Component {
 }
 export default Park;
 const styles = StyleSheet.create({
-    avail_text: {
+    welcome: {
+        fontSize : 18,
+        margin: 20
+    },  
+    book : {
         fontSize: 20,
         padding: 20,
         elevation: 2,

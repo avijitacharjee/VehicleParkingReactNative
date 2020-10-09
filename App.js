@@ -26,11 +26,17 @@ import {
 import Login from './src/Login.js';
 import SignUp from './src/SignUp.js';
 import Park from './src/Park.js';
+import VehicleEntry from './src/VehicleEntry.js'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator();
 class App extends Component {
+  componentDidMount(){
+    StatusBar.setBarStyle( 'light-content',true);
+    StatusBar.setBackgroundColor("#009387");
+  }
   render() {
+    
     return (
       <>
         <NavigationContainer>
@@ -46,10 +52,14 @@ class App extends Component {
               component = {Park}
               // options = {{ headerShown: false}}
               headerStyle ={{
-                backgroundColor: "red",
+                backgroundColor: "RED",
                 
               }}
               headerTintColor = '#009387'
+              />
+              <Stack.Screen
+              name="QR"
+              component = {VehicleEntry}
               />
           </Stack.Navigator>
         </NavigationContainer>

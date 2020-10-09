@@ -10,7 +10,7 @@ class ParkingView extends Component {
     render(){
         return(
             <>
-                <View style = {styles.container}>
+                <View style = {styles.container} animation = "zoomInUp">
                     <View style={styles.row}>
                         <View style={styles.left}>
                             <ParkingBox/>

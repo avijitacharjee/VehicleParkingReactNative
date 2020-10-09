@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+
 import {
     Text,
     Image,
@@ -7,7 +9,9 @@ import {
     ScrollView,
     TextInput,
     TouchableOpacity,
-    ToastAndroid
+    ToastAndroid,
+    Modal,
+    ActivityIndicator
 } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
@@ -17,17 +21,60 @@ const Stack = createStackNavigator();
 class SignUp extends Component {
 
     state = {
-
+        name : null,
+        email : null,
+        phone : null,
+        password :null,
+        inProgress : false
+    }
+    showProgressDialog=()=>{
+        this.setState({
+            inProgress : true
+        });
+    }
+    hideProgressDialog=()=>{
+        this.setState({
+            inProgress : false
+        });
+    }
+    componentDidUpdate(){
+        console.log(this.state);
     }
     main = () => {
-
         this.props.navigation.navigate('Login');
+    }
+    signUp=()=>{
+        let formData = new FormData();
+        formData.append('name',this.state.name);
+        formData.append('email',this.state.email);
+        formData.append('phone',this.state.phone);
+        formData.append('password',this.state.password);
+        this.showProgressDialog();
+        axios.post("https://www.finalproject.xyz/vehicle_parking/api/auth.php", formData).then(
+            response=> {
+                this.hideProgressDialog();
+                ToastAndroid.show(JSON.stringify(response.data),ToastAndroid.SHORT);
+                console.log(JSON.stringify(response.data));
+            }
+        ).catch(error=> {
+            this.hideProgressDialog();
+            ToastAndroid.show(JSON.stringify(error),ToastAndroid.SHORT);
+        });
     }
     render() {
         return (
             <View>
-
+                
                 <ScrollView>
+                    <Modal
+                    visible={this.state.inProgress}>
+                    <View style={{ flex:1,backgroundColor:"#00000020", justifyContent:"center",alignItems:"center"}}>
+                        <View style={{backgroundColor:"white",padding:10,borderRadius:5, width:"80%", alignItems:"center"}}>
+                        <Text style={styles.progressHeader}>Loading...</Text>
+                        <ActivityIndicator size="large" color="#f35588"/>
+                        </View>
+                    </View>
+                    </Modal>
                     <View style={styles.container}>
                         <View style={styles.header}>
                             <Text style={styles.headerText}>Register</Text>
@@ -40,6 +87,7 @@ class SignUp extends Component {
                                 <TextInput
                                     placeholder="eg. John Smith"
                                     style={styles.box}
+                                    onChangeText = {text=>this.setState({name: text})}
                                 />
                             </View>
                             <Text style={styles.text_footer}>Email</Text>
@@ -47,6 +95,7 @@ class SignUp extends Component {
                                 <TextInput
                                     placeholder="abc@example.com"
                                     style={styles.box}
+                                    onChangeText = {text=>this.setState({email: text})}
                                 />
                             </View>
                             <Text style={styles.text_footer}>Phone</Text>
@@ -54,6 +103,7 @@ class SignUp extends Component {
                                 <TextInput
                                     placeholder="01xxx-xxxxxx"
                                     style={styles.box}
+                                    onChangeText = {text=>this.setState({phone: text})}
                                 />
                             </View>
                             <Text style={styles.text_footer}>Password</Text>
@@ -62,10 +112,11 @@ class SignUp extends Component {
                                     placeholder="*****"
                                     style={styles.box}
                                     textContentType="password"
+                                    onChangeText = {text=>this.setState({password: text})}
                                 />
                             </View>
                             <TouchableOpacity
-
+                            onPress={this.signUp}
                             >
                                 <Animatable.View
                                     style={styles.sign_in_button}
@@ -89,13 +140,23 @@ class SignUp extends Component {
 
                         </Animatable.View>
                     </View>
+                    
                 </ScrollView>
             </View>
         )
     }
 }
 export default SignUp
-
+const CustomProgressBar = (visible) => (
+    <Modal onRequestClose={() => null} visible={visible}>
+      <View style={{ flex: 1, backgroundColor: '#dcdcdc', alignItems: 'center', justifyContent: 'center' }}>
+        <View style={{ borderRadius: 10, backgroundColor: 'white', padding: 25 }}>
+          <Text style={{ fontSize: 20, fontWeight: '200' }}>Loading</Text>
+          <ActivityIndicator size="large" />
+        </View>
+      </View>
+    </Modal>
+);
 const styles = StyleSheet.create({
     container: {
         flex: 1,
