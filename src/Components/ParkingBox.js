@@ -5,7 +5,7 @@ class ParkingBox extends Component {
     render(){
         return (
             <>
-                <View style={styles.parkingBox}>
+                <View style={styles.parkingBox} animatio="bounceIn">
 
                 </View>
             </>

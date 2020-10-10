@@ -19,7 +19,8 @@ import Park from './Park.js';
 const Stack = createStackNavigator();
 class Login extends Component {
     state = {
-        inProgress : false
+        inProgress : false,
+        status : 'Parking space is available. Click to book.'
     }
     showDialog=()=>{
         this.setState({inProgress:true});
@@ -28,6 +29,13 @@ class Login extends Component {
         this.setState({inProgress:false});
     }
     login = () => {
+        this.showDialog();
+        setTimeout(() => {
+            this.hideDialog();
+            ToastAndroid.show('Login Successfull',ToastAndroid.SHORT);
+            this.props.navigation.navigate('Park');
+        }, 500);
+        return;
         let formData = new FormData();
         formData.append('name','Devjit');
         formData.append('email','Devjit');
@@ -37,12 +45,12 @@ class Login extends Component {
         axios.post("https://www.finalproject.xyz/vehicle_parking/api/auth.php", formData).then(
             response=> {
                 this.hideDialog();
-                ToastAndroid.show(JSON.stringify(response.data),ToastAndroid.SHORT);
+                ToastAndroid.show('Registered Successfully',ToastAndroid.SHORT);
                 console.log(JSON.stringify(response.data));
             }
         ).catch(error=> {
             this.hideDialog();
-            ToastAndroid.show(JSON.stringify(error),ToastAndroid.SHORT);
+            ToastAndroid.show('Failed to connect.....',ToastAndroid.SHORT);
         });
 
         //this.props.navigation.navigate('Park');
@@ -163,7 +171,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderRadius: 5
     },
-
     sign_out_button: {
         marginTop: 30,
         alignItems: 'center',
@@ -194,11 +201,11 @@ const styles = StyleSheet.create({
         backgroundColor: '#d2f7f1'
     },
     box: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.2,
-        shadowRadius: 1,
-        elevation: .5,
+        borderRadius : 5,
+        borderStyle : "solid",
+        borderColor : 'black',
+        borderWidth : .4,
+        height : 40
     },
     headerText2: {
         color: '#000000',

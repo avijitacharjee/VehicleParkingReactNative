@@ -111,13 +111,13 @@ MERGED from [com.facebook.soloader:annotation:0.8.2] C:\Users\Avijit Acharjee\.g
 	tools:ignore
 		ADDED from I:\Development\React native\VehicleParking\android\app\src\debug\AndroidManifest.xml:7:75-114
 	android:roundIcon
-		ADDED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml:10:7-52
-		ADDED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml:10:7-52
+		ADDED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml:10:7-48
+		ADDED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml:10:7-48
 	tools:targetApi
 		ADDED from I:\Development\React native\VehicleParking\android\app\src\debug\AndroidManifest.xml:7:54-74
 	android:icon
-		ADDED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml:9:7-41
-		ADDED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml:9:7-41
+		ADDED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml:9:7-37
+		ADDED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml:9:7-37
 	android:allowBackup
 		ADDED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml:11:7-34
 		ADDED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml:11:7-34

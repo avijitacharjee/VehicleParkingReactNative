@@ -21,11 +21,12 @@ const Stack = createStackNavigator();
 class SignUp extends Component {
 
     state = {
-        name : null,
-        email : null,
-        phone : null,
-        password :null,
-        inProgress : false
+        name : '',
+        email : '',
+        phone : '',
+        password :'',
+        inProgress : false,
+        inp : styles.box
     }
     showProgressDialog=()=>{
         this.setState({
@@ -44,6 +45,10 @@ class SignUp extends Component {
         this.props.navigation.navigate('Login');
     }
     signUp=()=>{
+        if(!this.validate()){
+            ToastAndroid.show("All fields are required",ToastAndroid.SHORT);
+            return;
+        }
         let formData = new FormData();
         formData.append('name',this.state.name);
         formData.append('email',this.state.email);
@@ -60,6 +65,16 @@ class SignUp extends Component {
             this.hideProgressDialog();
             ToastAndroid.show(JSON.stringify(error),ToastAndroid.SHORT);
         });
+    }
+    validate=()=>{
+        console.log(this.state.name,this.state.email,this.state.phone,this.state.password);
+        if(this.state.name.length==0 ||
+            this.state.email.length==0 ||
+            this.state.phone.length==0 ||
+            this.state.password.length==0){
+            return false;
+        }
+        return true;
     }
     render() {
         return (
@@ -86,8 +101,10 @@ class SignUp extends Component {
                             <View style={styles.action}>
                                 <TextInput
                                     placeholder="eg. John Smith"
-                                    style={styles.box}
-                                    onChangeText = {text=>this.setState({name: text})}
+                                    style={this.state.inp}
+                                    onChangeText = {text=>{
+                                        this.setState({name: text})}
+                                    }
                                 />
                             </View>
                             <Text style={styles.text_footer}>Email</Text>
@@ -95,7 +112,8 @@ class SignUp extends Component {
                                 <TextInput
                                     placeholder="abc@example.com"
                                     style={styles.box}
-                                    onChangeText = {text=>this.setState({email: text})}
+                                    onChangeText = {text=>{
+                                        this.setState({email: text})}}
                                 />
                             </View>
                             <Text style={styles.text_footer}>Phone</Text>
@@ -136,8 +154,6 @@ class SignUp extends Component {
                                 </Text>
                                 </Animatable.View >
                             </TouchableOpacity>
-
-
                         </Animatable.View>
                     </View>
                     
@@ -230,11 +246,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#d2f7f1'
     },
     box: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.2,
-        shadowRadius: 1,
-        elevation: .5,
+        borderColor : 'black',
+        borderWidth : .2,
+        borderRadius : 4,
+        height : 40
     },
     headerText2: {
         color: '#000000',
@@ -242,5 +257,14 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         padding: 10,
         borderRadius: 10
+    },
+    err: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 1,
+        borderColor : 'red',
+        borderWidth : .8,
+        borderRadius : 10,
     }
 })

@@ -11,8 +11,20 @@ import ParkingBox from "./Components/ParkingBox";
 import ParkingView from "./Components/ParkingView";
 import {View} from 'react-native-animatable';
 class Park extends Component {
+    state ={
+        status : 'Parking space is available. Click to book',
+        stBinary : true
+    }
     qrCode = () => {
-        this.props.navigation.navigate('QR');
+        if(this.state.stBinary){
+            this.setState({
+                status : 'You have booked for a parking. Click to show QR code...',
+                stBinary : false
+            })
+        }else{
+            this.props.navigation.navigate('QR');
+        }
+        
     }
     render() {
         return (
@@ -24,18 +36,18 @@ class Park extends Component {
                         Welcome Mr. John
                     </Text>
                     <ParkingView/>
-                    <TouchableOpacity>
+                    <TouchableOpacity
+                    onPress = {this.qrCode}>
                         <Text style = {styles.book}>
-                            Parking Space is available.
-                            Click to book.
+                            {this.state.status}
                         </Text>
                     </TouchableOpacity>
-                    <TouchableOpacity
+                    {/* <TouchableOpacity
                     onPress={this.qrCode}>
                         <Text style = {styles.book}>
                             Qr Code
                         </Text>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
                 </View>
             </>
         )
