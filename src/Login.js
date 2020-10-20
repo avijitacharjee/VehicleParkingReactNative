@@ -20,7 +20,9 @@ const Stack = createStackNavigator();
 class Login extends Component {
     state = {
         inProgress : false,
-        status : 'Parking space is available. Click to book.'
+        status : 'Parking space is available. Click to book.',
+        email : '',
+        password : ''
     }
     showDialog=()=>{
         this.setState({inProgress:true});
@@ -30,26 +32,23 @@ class Login extends Component {
     }
     login = () => {
         this.showDialog();
-        setTimeout(() => {
-            this.hideDialog();
-            ToastAndroid.show('Login Successfull',ToastAndroid.SHORT);
-            this.props.navigation.navigate('Park');
-        }, 500);
-        return;
         let formData = new FormData();
-        formData.append('name','Devjit');
-        formData.append('email','Devjit');
-        formData.append('phone','ppp');
-        formData.append('password','Devjit');
-        this.showDialog();
+        formData.append('email',this.state.email);
+        formData.append('password',this.state.password); 
         axios.post("https://www.finalproject.xyz/vehicle_parking/api/auth.php", formData).then(
             response=> {
                 this.hideDialog();
-                ToastAndroid.show('Registered Successfully',ToastAndroid.SHORT);
                 console.log(JSON.stringify(response.data));
+                if(JSON.stringify(response.data).includes('success')){
+                    ToastAndroid.show('Registered Successfully',ToastAndroid.SHORT);
+                    this.props.navigation.navigate('Park');
+                }else {
+                    ToastAndroid.show('Incorrect Email/password',ToastAndroid.SHORT);
+                }
             }
         ).catch(error=> {
             this.hideDialog();
+            console.log(error.message);
             ToastAndroid.show('Failed to connect.....',ToastAndroid.SHORT);
         });
 
@@ -83,6 +82,9 @@ class Login extends Component {
                                 <TextInput
                                     placeholder="abc@example.com"
                                     style={styles.box}
+                                    onChangeText = {text=>{
+                                        this.setState({email : text})}
+                                    }
                                 />
                             </View>
                             <Text style={styles.text_footer}>Password</Text>
@@ -91,6 +93,9 @@ class Login extends Component {
                                     placeholder="*****"
                                     style={styles.box}
                                     textContentType="password"
+                                    onChangeText = {text=>{
+                                        this.setState({password : text})}
+                                    }
                                 />
                             </View>
                             <TouchableOpacity

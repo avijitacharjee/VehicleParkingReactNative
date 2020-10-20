@@ -6,33 +6,44 @@ import {
 } from 'react-native';
 import ParkingBox from './ParkingBox';
 import {View} from 'react-native-animatable';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 class ParkingView extends Component {
+    state = {
+        a:1
+    }
+    cl = ()=> {
+        this.setState({a:0})
+        console.log('clicked');
+    }
     render(){
         return(
             <>
                 <View style = {styles.container} animation = "zoomInUp">
                     <View style={styles.row}>
+                        <TouchableOpacity onPress={this.cl}>
                         <View style={styles.left}>
-                            <ParkingBox/>
+                            <ParkingBox name= {this.state.a}/>
                         </View>
+                        </TouchableOpacity>
+                        
                         <View style={styles.right}>
-                            <ParkingBox/>
+                            <ParkingBox name = {this.state.b}/>
                         </View>
                     </View>
                     <View style={styles.row}>
                         <View style={styles.left}>
-                            <ParkingBox/>
+                            <ParkingBox name = "0"/>
                         </View>
                         <View style={styles.right}>
-                            <ParkingBox/>
+                            <ParkingBox name = "1"/>
                         </View>
                     </View>
                     <View style={styles.row}>
                         <View style={styles.left}>
-                            <ParkingBox/>
+                            <ParkingBox name = "0"/>
                         </View>
                         <View style={styles.right}>
-                            <ParkingBox/>
+                            <ParkingBox name = "0"/>
                         </View>
                     </View>
                     

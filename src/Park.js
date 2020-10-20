@@ -3,13 +3,15 @@ import {
     StyleSheet,
     Text,
     Image,
-    StatusBar
+    StatusBar,
+    Dimensions
 } from 'react-native';
 import * as Animateble from 'react-native-animatable';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import ParkingBox from "./Components/ParkingBox";
 import ParkingView from "./Components/ParkingView";
 import {View} from 'react-native-animatable';
+const {width,height} = Dimensions.get('window');
 class Park extends Component {
     state ={
         status : 'Parking space is available. Click to book',
