@@ -9,12 +9,18 @@ import {View} from 'react-native-animatable';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 class ParkingView extends Component {
     state = {
-        a:1
+        a:1,
+        b:1,
+        c:1,
+        d:1,
+        e:1,
+        f:1
     }
     cl = ()=> {
         this.setState({a:0})
         console.log('clicked');
     }
+    
     render(){
         return(
             <>

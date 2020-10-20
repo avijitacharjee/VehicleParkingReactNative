@@ -15,7 +15,8 @@ const {width,height} = Dimensions.get('window');
 class Park extends Component {
     state ={
         status : 'Parking space is available. Click to book',
-        stBinary : true
+        stBinary : true,
+        mask : 'Amar matha'
     }
     qrCode = () => {
         if(this.state.stBinary){
@@ -28,7 +29,15 @@ class Park extends Component {
         }
         
     }
+    componentDidMount(){
+        this.setState({
+            mask: this.props.route.params.mask
+        })
+    }
     render() {
+        
+        console.log(this.props.route.params.mask);
+        //const mask = params ? params.mask : null;
         return (
             <>
                 <View>

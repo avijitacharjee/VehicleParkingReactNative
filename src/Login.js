@@ -22,7 +22,8 @@ class Login extends Component {
         inProgress : false,
         status : 'Parking space is available. Click to book.',
         email : '',
-        password : ''
+        password : '',
+        mask:'Alarvai'
     }
     showDialog=()=>{
         this.setState({inProgress:true});
@@ -40,8 +41,9 @@ class Login extends Component {
                 this.hideDialog();
                 console.log(JSON.stringify(response.data));
                 if(JSON.stringify(response.data).includes('success')){
-                    ToastAndroid.show('Registered Successfully',ToastAndroid.SHORT);
-                    this.props.navigation.navigate('Park');
+                    ToastAndroid.show('Successfully logged in',ToastAndroid.SHORT);
+                    console.log(response.data.mask);
+                    this.props.navigation.navigate('Park',{mask:response.data.mask});
                 }else {
                     ToastAndroid.show('Incorrect Email/password',ToastAndroid.SHORT);
                 }
