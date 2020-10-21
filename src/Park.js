@@ -46,7 +46,7 @@ class Park extends Component {
                         >
                         Welcome Mr. John
                     </Text>
-                    <ParkingView/>
+                    <ParkingView mask={this.state.mask}/>
                     <TouchableOpacity
                     onPress = {this.qrCode}>
                         <Text style = {styles.book}>

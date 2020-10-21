@@ -9,9 +9,9 @@ import {View} from 'react-native-animatable';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 class ParkingView extends Component {
     state = {
-        a:1,
+        a:0,
         b:1,
-        c:1,
+        c:0,
         d:1,
         e:1,
         f:1
@@ -38,18 +38,18 @@ class ParkingView extends Component {
                     </View>
                     <View style={styles.row}>
                         <View style={styles.left}>
-                            <ParkingBox name = "0"/>
+                            <ParkingBox name = {this.state.c}/>
                         </View>
                         <View style={styles.right}>
-                            <ParkingBox name = "1"/>
+                            <ParkingBox name = {this.state.d}/>
                         </View>
                     </View>
                     <View style={styles.row}>
                         <View style={styles.left}>
-                            <ParkingBox name = "0"/>
+                            <ParkingBox name = {this.state.e}/>
                         </View>
                         <View style={styles.right}>
-                            <ParkingBox name = "0"/>
+                            <ParkingBox name = {this.state.f}/>
                         </View>
                     </View>
                     

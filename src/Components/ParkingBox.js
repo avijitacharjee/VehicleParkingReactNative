@@ -23,7 +23,7 @@ class ParkingBox extends Component {
     }
     componentDidMount(){
         console.log(this.props.name);
-        if(this.props.name==="1"){
+        if(this.props.name=="1"){
             this.setState({boxStyle : styles.parkingBox});
             console.log('hi');
         }else{
