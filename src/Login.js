@@ -17,6 +17,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Park from './Park.js';
 const Stack = createStackNavigator();
+import SharedPreferences from 'react-native-shared-preferences';
 class Login extends Component {
     state = {
         inProgress : false,
@@ -43,7 +44,9 @@ class Login extends Component {
                 if(JSON.stringify(response.data).includes('success')){
                     ToastAndroid.show('Successfully logged in',ToastAndroid.SHORT);
                     console.log(response.data.mask);
-                    this.props.navigation.navigate('Park',{mask:response.data.mask});
+                    SharedPreferences.setName("name");
+                    SharedPreferences.setItem("user_id",JSON.stringify(response.data.data.id));
+                    this.props.navigation.navigate('Park',{mask:response.data.mask,name:response.data.data.name});
                 }else {
                     ToastAndroid.show('Incorrect Email/password',ToastAndroid.SHORT);
                 }

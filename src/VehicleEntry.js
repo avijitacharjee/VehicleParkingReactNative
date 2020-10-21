@@ -9,11 +9,12 @@ import {View} from 'react-native-animatable';
 
 class VehicleEntry extends Component {
     state = {
-        text : 'Avijit Acharjee'
+        text : 'Avijit Acharjee',
+        token : this.props.route.params.mask
     }
     
     render() {  
-        let Image_Http_URL ={ uri: 'https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=Avijit'};
+        let Image_Http_URL ={ uri: 'https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl='+this.state.token};
         return (
             <>
                 <View>

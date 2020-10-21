@@ -4,7 +4,10 @@ import {
     Text,
     Image,
     StatusBar,
-    Dimensions
+    Dimensions,
+    Modal,
+    ActivityIndicator,
+    ToastAndroid
 } from 'react-native';
 import * as Animateble from 'react-native-animatable';
 import { TouchableOpacity } from 'react-native-gesture-handler';
@@ -12,30 +15,67 @@ import ParkingBox from "./Components/ParkingBox";
 import ParkingView from "./Components/ParkingView";
 import {View} from 'react-native-animatable';
 const {width,height} = Dimensions.get('window');
-var SharedPreferences = require('react-native-shared-preferences');
+//var SharedPreferences = require('react-native-shared-preferences');
+import SharedPreferences from 'react-native-shared-preferences';
+import axios from 'axios';
 class Park extends Component {
     state ={
         status : 'Parking space is available. Click to book',
         stBinary : true,
-        mask : this.props.route.params.mask
+        mask : this.props.route.params.mask,
+        inProgress : false,
+        token : '',
+        user_id : '',
+        name : this.props.route.params.name
+    }
+    showDialog=()=>{
+        this.setState({inProgress:true});
+    }
+    hideDialog=()=>{
+        this.setState({inProgress:false});
     }
     constructor(props){
         super(props);
-        SharedPreferences.setName("name");
-        SharedPreferences.setItem("key","value");
-        SharedPreferences.getItem("key", function(value){
-            console.log(value);
-          });
+        
     }
     qrCode = () => {
-        
         if(this.state.stBinary){
-            this.setState({
-                status : 'You have booked for a parking. Click to show QR code...',
-                stBinary : false
-            })
+            this.showDialog();
+            let _this = this;
+            
+            SharedPreferences.getItem("user_id", function(value){
+                
+                _this.setState({
+                    user_id:value,
+                    token : Date.now()+""
+                })
+                let formData = new FormData();
+                formData.append('user_id',value);
+                formData.append('token',_this.state.token); 
+                axios.post("https://www.finalproject.xyz/vehicle_parking/api/bookings.php", formData).then(
+                    response=> {
+                        _this.hideDialog();
+                        console.log(JSON.stringify(response.data));
+                        ToastAndroid.show('Successfully booked',ToastAndroid.SHORT);
+                        console.log(response);
+                    }
+                ).catch(error=> {
+                    _this.hideDialog();
+                    console.log(error.message);
+                    ToastAndroid.show('Failed to connect.....',ToastAndroid.SHORT);
+                });
+                _this.setState({
+                    status : 'You have booked for a parking. Click to show QR code...',
+                    stBinary : false
+                })
+                console.log(_this.state);
+            });
+
+            
         }else{
-            this.props.navigation.navigate('QR');
+            this.props.navigation.navigate('QR',{
+                token : this.state.token
+            });
         }
         
     }
@@ -48,10 +88,19 @@ class Park extends Component {
         return (
             <>
                 <View>
+                    <Modal
+                    visible={this.state.inProgress}>
+                    <View style={{ flex:1,backgroundColor:"#00000080", justifyContent:"center",alignItems:"center"}}>
+                        <View style={{backgroundColor:"white",padding:10,borderRadius:5, width:"80%", alignItems:"center"}}>
+                            <Text style={styles.progressHeader}>Loading...</Text>
+                            <ActivityIndicator size="large" color="#009387"/>
+                        </View>
+                    </View>
+                    </Modal>
                     <Text
                         style={styles.welcome}
                         >
-                        Welcome Mr. John
+                        Welcome Mr. {this.state.name}
                     </Text>
                     <ParkingView mask={this.state.mask}/>
                     <TouchableOpacity
