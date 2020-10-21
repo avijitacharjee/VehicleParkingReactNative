@@ -36,7 +36,21 @@ class Park extends Component {
     }
     constructor(props){
         super(props);
-        
+        console.log('hello');
+        let arr = this.state.mask.split("");
+        var i = 0;
+        var p = 0;
+        for(i=0;i<arr.length;i++){
+            p+=parseInt(arr[i]);
+            console.log(p);
+        }
+        if(p==6){
+            this.state = {
+                ...this.state,
+                status : "Parking Space is not available..."
+            }
+            console.log(this.state);
+        }
     }
     qrCode = () => {
         if(this.state.stBinary){
@@ -79,12 +93,13 @@ class Park extends Component {
         }
         
     }
+    componentWillUnmount(){
+        
+    }
     
     render() {
-        
         //console.log(this.props.route.params.mask);
-        console.log("park"+this.state.mask);
-        //const mask = params ? params.mask : null;
+        
         return (
             <>
                 <View>
