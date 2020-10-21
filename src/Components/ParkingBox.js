@@ -22,13 +22,13 @@ class ParkingBox extends Component {
         boxStyle:styles.parkingBox
     }
     componentDidMount(){
-        console.log(this.props.name);
+        //console.log(this.props.name);
         if(this.props.name=="1"){
             this.setState({boxStyle : styles.parkingBox});
-            console.log('hi');
+            //console.log('hi');
         }else{
             this.setState({boxStyle : styles.filedBox});
-            console.log('hello');
+            //console.log('hello');
         }
     }
     render(){

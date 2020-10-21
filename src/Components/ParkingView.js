@@ -8,6 +8,23 @@ import ParkingBox from './ParkingBox';
 import {View} from 'react-native-animatable';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 class ParkingView extends Component {
+    constructor(props){
+        super(props);
+        let str = this.props.mask;
+        let arr = str.split("");
+        console.log('parkingView');
+        console.log(arr[0],arr[5]);
+        this.setState();
+        console.log(this.state);
+        this.state = {
+            a : arr[0],
+            b : arr[1],
+            c : arr[2],
+            d : arr[3],
+            e : arr[4],
+            f : arr[5]
+        }
+    }
     state = {
         a:0,
         b:1,
@@ -17,11 +34,26 @@ class ParkingView extends Component {
         f:1
     }
     cl = ()=> {
-        this.setState({a:0})
-        console.log('clicked');
+        console.log(this.state);
+    }
+    componentDidMount(){
+        let str = this.props.mask;
+        let arr = str.split("");
+        console.log('parkingView');
+        console.log(arr[0],arr[5]);
+        this.setState({
+            a : arr[0],
+            b : arr[1],
+            c : arr[2],
+            d : arr[3],
+            e : arr[4],
+            f : arr[5]
+        });
+        console.log(this.state);
     }
     
     render(){
+        
         return(
             <>
                 <View style = {styles.container} animation = "zoomInUp">

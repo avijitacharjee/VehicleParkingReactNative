@@ -16,7 +16,10 @@ class Park extends Component {
     state ={
         status : 'Parking space is available. Click to book',
         stBinary : true,
-        mask : 'Amar matha'
+        mask : this.props.route.params.mask
+    }
+    constructor(props){
+        super(props);
     }
     qrCode = () => {
         if(this.state.stBinary){
@@ -29,14 +32,11 @@ class Park extends Component {
         }
         
     }
-    componentDidMount(){
-        this.setState({
-            mask: this.props.route.params.mask
-        })
-    }
+    
     render() {
         
-        console.log(this.props.route.params.mask);
+        //console.log(this.props.route.params.mask);
+        console.log("park"+this.state.mask);
         //const mask = params ? params.mask : null;
         return (
             <>
