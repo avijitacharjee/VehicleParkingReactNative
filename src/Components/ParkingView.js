@@ -40,7 +40,6 @@ class ParkingView extends Component {
         let str = this.props.mask;
         let arr = str.split("");
         console.log('parkingView');
-        console.log(arr[0],arr[5]);
         this.setState({
             a : arr[0],
             b : arr[1],

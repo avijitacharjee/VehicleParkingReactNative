@@ -12,6 +12,7 @@ import ParkingBox from "./Components/ParkingBox";
 import ParkingView from "./Components/ParkingView";
 import {View} from 'react-native-animatable';
 const {width,height} = Dimensions.get('window');
+var SharedPreferences = require('react-native-shared-preferences');
 class Park extends Component {
     state ={
         status : 'Parking space is available. Click to book',
@@ -20,8 +21,14 @@ class Park extends Component {
     }
     constructor(props){
         super(props);
+        SharedPreferences.setName("name");
+        SharedPreferences.setItem("key","value");
+        SharedPreferences.getItem("key", function(value){
+            console.log(value);
+          });
     }
     qrCode = () => {
+        
         if(this.state.stBinary){
             this.setState({
                 status : 'You have booked for a parking. Click to show QR code...',

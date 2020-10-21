@@ -5,6 +5,7 @@ INJECTED from I:\Development\React native\VehicleParking\android\app\src\main\An
 INJECTED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml:1:1-27:12
 INJECTED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml:1:1-27:12
 MERGED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml:1:1-27:12
+MERGED from [:react-native-shared-preferences] I:\Development\React native\VehicleParking\node_modules\react-native-shared-preferences\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.flipper:flipper:0.37.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\43c61c3be5dd5143431b987247c4b11f\jetified-flipper-0.37.0\AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.37.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\966cf4734f348bed1bdd0e1d93697806\jetified-flipper-network-plugin-0.37.0\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.37.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\9c4f5868db13bac1b73174cde92a6436\jetified-flipper-fresco-plugin-0.37.0\AndroidManifest.xml:8:1-15:12
@@ -16,6 +17,8 @@ MERGED from [:react-native-screens] I:\Development\React native\VehicleParking\n
 MERGED from [com.facebook.react:react-native:0.63.2] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\9a99dbd96ffcfb970acefaaea87679b2\jetified-react-native-0.63.2\AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\a083b9190df6cd0b2eed1b8d83acb3d5\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [org.webkit:android-jsc:r245459] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\43032aab24cbb6d5a94d999481777494\jetified-android-jsc-r245459\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\880b7e418025ce421e62ae2f6f547833\material-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\f209091eb3926c649f0b3346884e478c\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.fresco:flipper:2.2.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\92d820dc3c0c82affc8bb92e91f895ad\jetified-flipper-2.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:stetho:2.2.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\96bc4699554d973dc2aa1ad0cd4408df\jetified-stetho-2.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fresco:2.2.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\b9ef6420f61f08e5306e99c94650da67\jetified-fresco-2.2.0\AndroidManifest.xml:2:1-9:12
@@ -31,8 +34,6 @@ MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] C:\Users\Avijit Ac
 MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\a46c0058724501f1549ee865d6593c06\jetified-imagepipeline-base-2.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:soloader:2.2.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\d66e3a0e72430cf8212131325697428c\jetified-soloader-2.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\1b44f998a3fdac59efca52fbd0405d15\jetified-soloader-0.8.2\AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.material:material:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\880b7e418025ce421e62ae2f6f547833\material-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\f209091eb3926c649f0b3346884e478c\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\23f12b0a995277db82a9d4b860245889\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\32488318cfc756fa0f6ae91e625fa530\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\bcf856ddfeb04b3b73ed182739910d39\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -93,10 +94,10 @@ MERGED from I:\Development\React native\VehicleParking\android\app\src\main\Andr
 MERGED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml:6:5-25:19
 MERGED from [com.facebook.react:react-native:0.63.2] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\9a99dbd96ffcfb970acefaaea87679b2\jetified-react-native-0.63.2\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.63.2] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\9a99dbd96ffcfb970acefaaea87679b2\jetified-react-native-0.63.2\AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\1b44f998a3fdac59efca52fbd0405d15\jetified-soloader-0.8.2\AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\1b44f998a3fdac59efca52fbd0405d15\jetified-soloader-0.8.2\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\880b7e418025ce421e62ae2f6f547833\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\880b7e418025ce421e62ae2f6f547833\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\1b44f998a3fdac59efca52fbd0405d15\jetified-soloader-0.8.2\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\1b44f998a3fdac59efca52fbd0405d15\jetified-soloader-0.8.2\AndroidManifest.xml:11:5-20
 MERGED from [androidx.core:core:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\76f2b6439d16df60df3177021482ee5a\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\76f2b6439d16df60df3177021482ee5a\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\67aa86ef8808cac41aa5afe6d271f3ea\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
@@ -159,6 +160,8 @@ uses-sdk
 INJECTED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml
 INJECTED from I:\Development\React native\VehicleParking\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-shared-preferences] I:\Development\React native\VehicleParking\node_modules\react-native-shared-preferences\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-shared-preferences] I:\Development\React native\VehicleParking\node_modules\react-native-shared-preferences\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.flipper:flipper:0.37.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\43c61c3be5dd5143431b987247c4b11f\jetified-flipper-0.37.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper:0.37.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\43c61c3be5dd5143431b987247c4b11f\jetified-flipper-0.37.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.37.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\966cf4734f348bed1bdd0e1d93697806\jetified-flipper-network-plugin-0.37.0\AndroidManifest.xml:11:5-13:41
@@ -181,6 +184,10 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Avij
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\a083b9190df6cd0b2eed1b8d83acb3d5\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [org.webkit:android-jsc:r245459] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\43032aab24cbb6d5a94d999481777494\jetified-android-jsc-r245459\AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\43032aab24cbb6d5a94d999481777494\jetified-android-jsc-r245459\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\880b7e418025ce421e62ae2f6f547833\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\880b7e418025ce421e62ae2f6f547833\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\f209091eb3926c649f0b3346884e478c\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\f209091eb3926c649f0b3346884e478c\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.facebook.fresco:flipper:2.2.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\92d820dc3c0c82affc8bb92e91f895ad\jetified-flipper-2.2.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.2.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\92d820dc3c0c82affc8bb92e91f895ad\jetified-flipper-2.2.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:stetho:2.2.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\96bc4699554d973dc2aa1ad0cd4408df\jetified-stetho-2.2.0\AndroidManifest.xml:5:5-7:41
@@ -211,10 +218,6 @@ MERGED from [com.facebook.fresco:soloader:2.2.0] C:\Users\Avijit Acharjee\.gradl
 MERGED from [com.facebook.fresco:soloader:2.2.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\d66e3a0e72430cf8212131325697428c\jetified-soloader-2.2.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\1b44f998a3fdac59efca52fbd0405d15\jetified-soloader-0.8.2\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\1b44f998a3fdac59efca52fbd0405d15\jetified-soloader-0.8.2\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.material:material:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\880b7e418025ce421e62ae2f6f547833\material-1.1.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\880b7e418025ce421e62ae2f6f547833\material-1.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\f209091eb3926c649f0b3346884e478c\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\f209091eb3926c649f0b3346884e478c\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\23f12b0a995277db82a9d4b860245889\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\23f12b0a995277db82a9d4b860245889\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Avijit Acharjee\.gradle\caches\transforms-2\files-2.1\32488318cfc756fa0f6ae91e625fa530\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
