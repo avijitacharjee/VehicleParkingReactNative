@@ -60,7 +60,7 @@ class Login extends Component {
         //this.props.navigation.navigate('Park');
     }
     registerPage = () => {
-        this.props.navigation.navigate('SignUp');
+        this.props.navigation.navigate('Dashboard');
     }
     render() {
         return (

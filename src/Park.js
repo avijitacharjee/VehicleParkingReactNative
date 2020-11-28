@@ -7,7 +7,8 @@ import {
     Dimensions,
     Modal,
     ActivityIndicator,
-    ToastAndroid
+    ToastAndroid,
+    Button
 } from 'react-native';
 import * as Animateble from 'react-native-animatable';
 import { TouchableOpacity } from 'react-native-gesture-handler';
@@ -96,7 +97,9 @@ class Park extends Component {
     componentWillUnmount(){
         
     }
-    
+    dashboard = () => {
+        
+    }
     render() {
         //console.log(this.props.route.params.mask);
         
@@ -130,6 +133,10 @@ class Park extends Component {
                             Qr Code
                         </Text>
                     </TouchableOpacity> */}
+                    <TouchableOpacity
+                    onPress = {this.dashboard}>
+                        <Btn/>
+                    </TouchableOpacity>
                 </View>
             </>
         )
@@ -159,3 +166,11 @@ const styles = StyleSheet.create({
 
     // .btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-success:hover{color:#fff;background-color:#218838;border-color:#1e7e34}.btn-success.focus,.btn-success:focus{box-shadow:0 0 0 .2rem rgba(40,167,69,.5)}.btn-success.disabled,.btn-success:disabled{color:#fff;background-color:#28a745;border-color:#28a745}.btn-success:not(:disabled):not(.disabled).active,.btn-success:not(:disabled):not(.disabled):active,.show>.btn-success.dropdown-toggle{color:#fff;background-color:#1e7e34;border-color:#1c7430}.btn-success:not(:disabled):not(.disabled).active:focus,.btn-success:not(:disabled):not(.disabled):active:focus,.show>.btn-success.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(40,167,69,.5)}
 });
+const Btn = () => {
+    a = () => {
+        console.log('abcd')
+    }
+    return (
+        <Button />
+    )
+} 

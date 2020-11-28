@@ -29,6 +29,7 @@ import Park from './src/Park.js';
 import VehicleEntry from './src/VehicleEntry.js'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import Dashboard from './src/Components/Dashboard/Dashboard.js';
 const Stack = createStackNavigator();
 class App extends Component {
   componentDidMount(){
@@ -60,6 +61,10 @@ class App extends Component {
               <Stack.Screen
               name="QR"
               component = {VehicleEntry}
+              />
+              <Stack.Screen
+              name="Dashboard"
+              component = {Dashboard}
               />
           </Stack.Navigator>
         </NavigationContainer>
