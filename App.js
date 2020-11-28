@@ -32,6 +32,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Dashboard from './src/Components/Dashboard/Dashboard.js';
 import Profile from './src/Components/Profile/Profile.js';
 import Help from './src/Components/Dashboard/help/Help.js';
+import History from './src/Components/History/History.js';
 const Stack = createStackNavigator();
 class App extends Component {
   componentDidMount(){
@@ -76,7 +77,10 @@ class App extends Component {
               name="Help"
               component = {Help}
               />
-              
+              <Stack.Screen
+              name="History"
+              component = {History}
+              />
           </Stack.Navigator>
         </NavigationContainer>
       </>

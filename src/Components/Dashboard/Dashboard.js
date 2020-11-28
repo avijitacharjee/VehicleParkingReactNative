@@ -27,12 +27,12 @@ export default class Dashboard extends React.Component {
                         <TouchableOpacity style={styles.item } onPress={()=>this.onClick('Help')}>
                             <Text style={styles.text}> Reserve </Text>
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.item} onPress={()=>this.onClick('Profile')}>
+                        <TouchableOpacity style={styles.item} onPress={()=>this.onClick('Help')}>
                             <Text style={styles.text}> Help </Text>
                         </TouchableOpacity>
                     </View>
                     <View style={styles.row}>
-                        <TouchableOpacity style={styles.item}>
+                        <TouchableOpacity style={styles.item} onPress={()=>this.onClick('History')}>
                             <Text style={styles.text}> History </Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={styles.item}>
