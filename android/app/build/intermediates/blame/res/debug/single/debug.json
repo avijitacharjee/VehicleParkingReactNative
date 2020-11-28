@@ -20,12 +20,12 @@
         "source": "I:\\Development\\React native\\VehicleParking\\android\\app\\src\\main\\res\\drawable-mdpi\\node_modules_reactnavigation_stack_src_views_assets_backiconmask.png"
     },
     {
-        "merged": "I:\\Development\\React native\\VehicleParking\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_logo_round.png.flat",
-        "source": "I:\\Development\\React native\\VehicleParking\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_logo_round.png"
-    },
-    {
         "merged": "I:\\Development\\React native\\VehicleParking\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
         "source": "I:\\Development\\React native\\VehicleParking\\android\\app\\src\\main\\res\\drawable-xxhdpi\\node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "I:\\Development\\React native\\VehicleParking\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_logo_round.png.flat",
+        "source": "I:\\Development\\React native\\VehicleParking\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_logo_round.png"
     },
     {
         "merged": "I:\\Development\\React native\\VehicleParking\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
@@ -40,16 +40,16 @@
         "source": "I:\\Development\\React native\\VehicleParking\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_logo_foreground.png"
     },
     {
+        "merged": "I:\\Development\\React native\\VehicleParking\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "I:\\Development\\React native\\VehicleParking\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
         "merged": "I:\\Development\\React native\\VehicleParking\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "I:\\Development\\React native\\VehicleParking\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
         "merged": "I:\\Development\\React native\\VehicleParking\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_logo_round.xml.flat",
         "source": "I:\\Development\\React native\\VehicleParking\\android\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_logo_round.xml"
-    },
-    {
-        "merged": "I:\\Development\\React native\\VehicleParking\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "I:\\Development\\React native\\VehicleParking\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "I:\\Development\\React native\\VehicleParking\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
