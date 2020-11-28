@@ -13,7 +13,6 @@ import {
   ScrollView,
   View,
   Text,
-  StatusBar,
 } from 'react-native';
 
 import {
@@ -36,8 +35,8 @@ import History from './src/Components/History/History.js';
 const Stack = createStackNavigator();
 class App extends Component {
   componentDidMount(){
-    StatusBar.setBarStyle( 'light-content',true);
-    StatusBar.setBackgroundColor("#009387");
+    // StatusBar.setBarStyle( 'light-content',true);
+    // StatusBar.setBackgroundColor("#009387");
   }
   render() {
     

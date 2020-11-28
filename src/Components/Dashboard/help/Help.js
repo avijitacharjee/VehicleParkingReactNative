@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native-animatable'
-import {Button, Linking, StyleSheet, TouchableOpacity} from 'react-native'
+import {Button, StyleSheet, TouchableOpacity} from 'react-native'
 
 
 export class Help extends Component {
     call = () => {
-        Linking.openURL("tel:01878362895");
+        //Linking.openURL("tel:01878362895");
     }
     render() {
         return (
