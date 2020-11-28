@@ -30,6 +30,8 @@ import VehicleEntry from './src/VehicleEntry.js'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Dashboard from './src/Components/Dashboard/Dashboard.js';
+import Profile from './src/Components/Profile/Profile.js';
+import Help from './src/Components/Dashboard/help/Help.js';
 const Stack = createStackNavigator();
 class App extends Component {
   componentDidMount(){
@@ -66,6 +68,15 @@ class App extends Component {
               name="Dashboard"
               component = {Dashboard}
               />
+              <Stack.Screen
+              name="Profile"
+              component = {Profile}
+              />
+              <Stack.Screen
+              name="Help"
+              component = {Help}
+              />
+              
           </Stack.Navigator>
         </NavigationContainer>
       </>

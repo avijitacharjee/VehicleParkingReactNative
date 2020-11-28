@@ -13,7 +13,7 @@ export default class Dashboard extends React.Component {
 
     };
     onClick = (name) => {
-        console.log(name);
+        this.props.navigation.navigate(name);
     }
     render() {
         
@@ -24,7 +24,7 @@ export default class Dashboard extends React.Component {
                         <TouchableOpacity style={styles.item}  onPress={()=>this.onClick('Profile')}>
                             <Text style={styles.text}> Profile </Text>
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.item } onPress={()=>this.onClick('Profile')}>
+                        <TouchableOpacity style={styles.item } onPress={()=>this.onClick('Help')}>
                             <Text style={styles.text}> Reserve </Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={styles.item} onPress={()=>this.onClick('Profile')}>
